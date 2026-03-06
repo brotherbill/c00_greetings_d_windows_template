@@ -1,3 +1,27 @@
+## Making `npw` Globally Available
+
+
+To use `npw` from any folder in your terminal:
+
+1. Open your Terminal (PowerShell).
+2. Copy and paste the following command, then run it:
+
+  ```powershell
+  powershell -File .\setup_npw_global.ps1
+  ```
+
+This will:
+- Copy `npw.ps1` to a user scripts directory (e.g., `C:\Users\YourName\scripts`)
+- Create a wrapper `npw.cmd` for easy calling
+- Add the scripts directory to your user PATH if needed
+
+After running the setup, you can simply call:
+
+```
+npw -name my_new_project -description "My new D project for Windows"
+```
+
+from any folder, and a new project will be created as a subfolder.
 # How to Build, Run, and Debug This D Project
 
 ## 1. Build and Run from the Terminal
@@ -22,8 +46,6 @@ S
 - If prompted, select `Debug D project`.
 - The program will start under the debugger and stop at your breakpoint.
 - You can step through code, inspect variables, and view output in the terminal pane.
-
----
 
 
 ## Limitations of Programming in D on Windows
