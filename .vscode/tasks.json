@@ -50,7 +50,7 @@
       {
         "label": "clean",
         "type": "shell",
-        "command": "del /Q *.exe *.pdb",
+        "command": "Get-ChildItem -Filter *.exe | Remove-Item -Force; Get-ChildItem -Filter *.pdb | Remove-Item -Force; if (Test-Path .dub) { Remove-Item -Recurse -Force .dub }",
         "presentation": {
           "echo": true,
           "reveal": "always",
