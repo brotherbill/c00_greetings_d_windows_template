@@ -13,7 +13,7 @@ Open the VS Code Terminal (View > Terminal).
 
 - To remove generated .exe and .pdb files, run the VS Code task:
   - Press Ctrl+Shift+P, type `Run Task`, and select `clean`.
-
+S
 ## 3. Debug with F5 in VS Code
 
 - Set a breakpoint:
@@ -34,5 +34,5 @@ Open the VS Code Terminal (View > Terminal).
 2. **Linking with std.random:**
   - On Windows, linking with `std.random` may fail due to a known issue with the DMD toolchain. There is a workaround, which will be explained when you reach a lesson that uses random numbers.
 
-3. **Best Experience: Use Ubuntu in a VM:**
-  - For a smoother D development experience, consider running Ubuntu in a Virtual Machine (VM) on your Windows PC. This allows D to work as intended, including proper console buffering and linking. See [hello_d_ubuntu setup guide](https://github.com/brotherbill/hello_d_ubuntu) for step-by-step instructions. Setting up the VM is a bit tedious and may take a couple of hours, but you do not need to buy a Linux box, and D will run the way it should.
+3. **Compiler Accessibility:**
+  - The DMD compiler is easily accessible. The GDC and LDC compilers are more challenging to add to the project, and are outside the scope of this course for the Windows environment.
