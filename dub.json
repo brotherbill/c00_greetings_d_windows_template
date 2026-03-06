@@ -1,0 +1,17 @@
+{
+	"authors": [
+		"broth"
+	],
+	"copyright": "Copyright © 2026, broth",
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "c00_starter_windows"
+	,
+	"configurations": [
+		{
+			"name": "application",
+			"targetType": "executable",
+			"dflags": ["-g", "-debug"]
+		}
+	]
+}
