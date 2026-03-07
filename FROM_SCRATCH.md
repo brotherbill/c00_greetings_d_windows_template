@@ -16,11 +16,11 @@
 6. Clone the `hello_d_windows` repository by copying and pasting the following command into the terminal, then pressing Enter:  
 	`git clone https://github.com/brotherbill/hello_d_windows`  
 	(This will create the project at `C:\dev\d\hello_d_windows` if your current directory is `C:\dev\d`.)  
-	**Do not edit or delete the `hello_d_windows` project/directory. It is required to easily create new projects with `np.ps1`.**
-7. Run once to set up the `np` script so it is available anywhere:  
-	`setup_np_global.ps1`
+	**Do not edit or delete the `hello_d_windows` project/directory. It is required to easily create new projects with `new_d_project.ps1`.**
+7. Run once to set up the `new_d_project` script so it is available anywhere:  
+	`setup_new_d_project_global.ps1`
 8. Create a new project:  
-	`np -name my_next_d_project -description "description of my next d project"`
+	`new_d_project -name my_next_d_project -description "description of my next d project"`
 
 
 > **Sidebar:**  

@@ -84,12 +84,12 @@ Welcome! This guide will walk you through setting up your computer for D program
    **Do not edit or delete `hello_d_windows`—it is needed for new project creation.**
 7. **Set up the project creation script:**  
    In the terminal, type:
-   `setup_np_global.ps1`
-   Press Enter. This makes the `np` script available everywhere on your computer.  
+   `setup_new_d_project_global.ps1`
+   Press Enter. This makes the `new_d_project` script available everywhere on your computer.  
    > *Beginner Tip:* If you get a security warning, right-click the script, choose "Run with PowerShell," or check your PowerShell execution policy.
 8. **Create your first D project:**  
    In the terminal, type:
-   `np -name my_next_d_project -description "description of my next d project"`
+   `new_d_project -name my_next_d_project -description "description of my next d project"`
    Press Enter. This will create a new folder for your project.
 9. **Open and debug your project:**  
    In VS Code, open the new project folder. Open `source/app.d`. Click the margin next to line 5 to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step and print "Greetings, D!" to the Terminal. Press F5 again to finish running the program.  

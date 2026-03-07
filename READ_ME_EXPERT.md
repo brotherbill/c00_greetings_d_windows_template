@@ -16,9 +16,9 @@ Consider using the provided Ubuntu VM setup for a smoother D experience.
 1. Install VS Code, DMD, and the `code-d` extension.
 2. Clone the template: `git clone https://github.com/brotherbill/hello_d_windows`
    - Do not delete/edit `hello_d_windows` (used for scaffolding).
-3. Run `setup_np_global.ps1` to install the `np` project generator.
+3. Run `setup_new_d_project_global.ps1` to install the `new_d_project` project generator.
 4. Create a new project:
-   `np -name my_next_d_project -description "desc"`
+   `new_d_project -name my_next_d_project -description "desc"`
 5. Open the new project in VS Code, set a breakpoint in `source/app.d`, F5 to debug, F10 to step.
 
 For troubleshooting or full details, see the beginner documentation.

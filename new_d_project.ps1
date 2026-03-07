@@ -35,4 +35,4 @@ if (Test-Path $launchFile) {
 Write-Host "Project '$name' created and customized."
 
 # Sample usage:
-# np -name my_new_project -description "My new D project for Windows"
+# new_d_project -name my_new_project -description "My new D project for Windows"
