@@ -20,13 +20,22 @@ Copy-Item $source $dest -Force
 $cmdContent = 'powershell -ExecutionPolicy Bypass -File "%~dp0np.ps1" %*'
 Set-Content -Path $cmdDest -Value $cmdContent
 
-# Add scripts directory to user PATH if not already present
+
+# Add scripts directory to user PATH if not already present (persistent)
 $envPath = [System.Environment]::GetEnvironmentVariable("PATH", "User")
 if (-not ($envPath -split ";" | Where-Object { $_ -eq $userScripts })) {
     [System.Environment]::SetEnvironmentVariable("PATH", "$envPath;$userScripts", "User")
     Write-Host "Added $userScripts to your user PATH. You may need to restart your terminal."
 } else {
     Write-Host "$userScripts is already in your PATH."
+}
+
+# Add scripts directory to current session PATH if not already present
+if (-not ($env:PATH -split ";" | Where-Object { $_ -eq $userScripts })) {
+    $env:PATH = "$env:PATH;$userScripts"
+    Write-Host "Added $userScripts to your current session PATH."
+} else {
+    Write-Host "$userScripts is already in your current session PATH."
 }
 
 Write-Host "np is now globally available. You can call it from any folder:"
