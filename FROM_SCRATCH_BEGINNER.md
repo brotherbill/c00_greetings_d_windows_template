@@ -1,6 +1,5 @@
-> **Sidebar:**  
 > These instructions assume a fresh Windows 11 install, but they also work on systems with existing tools.
-> 
+
 > **Beginner Tip:** If you are new to programming or Windows setup, take your time with each step. If something doesn't look right, don't worry—just double-check the instructions or ask for help. Every programmer starts as a beginner!
 
 ## Handling Download Warnings for the D Installer
@@ -44,13 +43,33 @@ Welcome! This guide will walk you through setting up your computer for D program
    > *Beginner Tip:* On completing the VS Code Setup wizard, you may uncheck "Launch Visual Studio Code"—it isn't needed for the next step.  
    > *Beginner Tip:* Visual Studio Code (VS Code) is a free code editor. It's safe to install and is used by millions of developers.
 2. **Download and install the DMD D compiler:**  
-   Visit <https://dlang.org>, click "Download Windows Installer," and follow the prompts. Accept all default options.  
-   > *Beginner Tip:* If you see a warning about the download, refer to the "Handling Download Warnings for the D Installer" section above for step-by-step instructions.  
-   > *Beginner Tip:* Once the download is complete, open the downloaded file to start the installer. This will install the D language resources on your computer.  
+   Visit <https://dlang.org>, click "Download Windows Installer," and follow the prompts. During installation:
+   - Accept all default options—just keep clicking Next.
+   - If you see a wizard step with an "Install" button, click Install.
+   - The installer will also install Visual Studio (or some of its components); you won't use Visual Studio directly, but D needs resources that come with it.
+   - At the end of the D installation, you will see a final wizard step titled "Completing D Programming Language Setup." Click Finish to close the installer.
+   - When you are done downloading the installer, you may close the browser page with the dlang.org website.
+   > *Beginner Tip:* If you see a warning about the download, refer to the "Handling Download Warnings for the D Installer" section above for step-by-step instructions.
+   > *Beginner Tip:* Once the download is complete, open the downloaded file to start the installer. Windows will likely show a dialog: "Do you want to allow this app from an unknown publisher to make changes to your device?" This is normal for D—click Yes to continue with the installation.
    > *Beginner Tip:* The DMD compiler lets your computer understand and run D programs.
+
+   #### Installing Visual Studio 2019 (if prompted)
+   If the D installer prompts you to install Visual Studio 2019:
+   1. Accept all default options in the Visual Studio installer.
+   2. If you see a step with an "Install" button, click Install.
+   3. If you see a dialog asking "Do you want to continue without workloads?", click Continue. You do not need to select or install any workloads for D development.
+   4. Wait for the installation to finish. You do not need to launch Visual Studio when done.
+   5. When the Visual Studio Installer completes, you will see a window titled "Visual Studio Installer" with "Visual Studio Community 2019" displayed. Close this window by clicking the X in the title bar (top right corner).
+   > *Note:* You do not need to launch Visual Studio itself—just close the installer window when finished.
+   > *Note:* Installing Visual Studio may take several minutes. Please be patient while the installation completes.
 3. **Install the D language extension in VS Code:**  
    Open VS Code. Press Ctrl+Shift+X to open Extensions. Search for `code-d` by WebFreak and click Install.  
    > *Beginner Tip:* Extensions add new features to VS Code. `code-d` helps you write and debug D code easily.
+   > *Beginner Tip:* After opening VS Code, you can optionally make it full screen (click the square icon in the top right or press F11) for a better editing experience.
+   > *Beginner Tip:* In the Extensions view, type `code-d` into the textbox just below the "EXTENSIONS: MARKETPLACE" label. The first item in the list should be "D Programming Language (code-d)". Click Install next to it.
+   > *Beginner Tip:* If prompted, click the "Trust Publishers & Install" button to continue installing the extension.
+   > **Note:** You may see a "Reinstall serve-d" notification in VS Code. It is not needed—just close the notification.
+
 4. **Choose where to keep your D projects:**  
    In File Explorer, go to the folder where you want to store your D projects (for example, `C:\dev\d`).  
    > *Beginner Tip:* You can create a new folder if you want. Right-click and choose "New Folder."
