@@ -1,128 +1,23 @@
 
+> **Sidebar:**
+> This document assumes that you just factory reset your Windows 11 machine, so no assumptions are made about any additional resources. Of course, these instructions will also work on a mature machine loaded with resources.
+
+
+
 # FROM_SCRATCH.md
 
-## How to Create a Fresh D Project on Windows 11 (Beginner Guide, DMD Only)
+1. Download and install Visual Studio Code: https://code.visualstudio.com/
+2. Download and install the DMD D compiler from https://dlang.org by clicking the "Download Windows Install" button and accepting all default options.
+3. Open VS Code, go to Extensions (Ctrl+Shift+X), search for and install `code-d` by WebFreak.
+4. Navigate to the parent folder of your new project (e.g., `C:\dev\d`).
+5. Open the VS Code Terminal (Terminal).
+6. Clone the `hello_d_windows` repository by copying the following command, pasting it into the terminal, and pressing Enter:
+	`git clone https://github.com/brotherbill/hello_d_windows`
+	(This will create the project at `C:\dev\d\hello_d_windows` if your current directory is `C:\dev\d`)
+	**Do not edit or delete the `hello_d_windows` project/directory. It is required to easily create new projects with np.ps1.**
+7. Run once to setup `np` script, so it is available anywhere you want to add a new D project:
+	`setup_np_global.ps1`
+8. Run: `np -name my_next_d_project -description "description of my next d project"`
 
-### 1. Install DMD and Dub
-  - `dmd --version` (should print version info)
-  - `dub --version` (should print version info)
-
-### 2. Create Your Project Folder
-### 3. Initialize a New D Project
-  - `dub init .`
-
-  ```d
-  import std.stdio;
-  
-  void main()
-  {
-      writeln("Greetings, D!");
-  }
-  ```
-
-### 5. Update dub.json for Debugging
-  ```json
-  "configurations": [
-    {
-      "name": "application",
-      "targetType": "executable",
-      "dflags": ["-g", "-debug"]
-    }
-  ]
-  ```
-
-### 6. Configure VS Code for Debugging
-  ```json
-  {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "name": "Debug D project",
-        "type": "cppvsdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/c00_hello_d_windows.exe",
-        "args": [],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "preLaunchTask": "dub: build",
-        "console": "integratedTerminal"
-      },
-      {
-        "name": "Debug D project (Stop at entry)",
-        "type": "cppvsdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/c00_hello_d_windows.exe",
-        "args": [],
-        "stopAtEntry": true,
-        "cwd": "${workspaceFolder}",
-        "preLaunchTask": "dub: build",
-        "console": "integratedTerminal"
-      }
-    ]
-  }
-  ```
-
-### 7. Configure Build Tasks
-  ```json
-  {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "dub: build",
-        "type": "shell",
-        "command": "dub build",
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "presentation": {
-          "echo": true,
-          "reveal": "always",
-          "focus": false,
-          "panel": "shared",
-          "showReuseMessage": true
-        },
-        "problemMatcher": []
-      },
-      {
-        "label": "dub: run (integratedTerminal)",
-        "type": "shell",
-        "command": "dub run",
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "presentation": {
-          "echo": true,
-          "reveal": "always",
-          "focus": true,
-          "panel": "shared"
-        },
-        "problemMatcher": []
-      },
-      {
-        "label": "backup: success snapshot",
-        "type": "shell",
-        "command": "$ts = Get-Date -Format 'yyyyMMdd_HHmmss'; $zip = '..\\${workspaceFolderBasename}_success_' + $ts + '.zip'; Compress-Archive -Path * -DestinationPath $zip -Force; Write-Host ('Backup created: ' + $zip)",
-        "presentation": {
-          "echo": true,
-          "reveal": "always",
-          "focus": false,
-          "panel": "shared",
-          "showReuseMessage": true
-        },
-        "problemMatcher": []
-      }
-    ]
-  }
-  ```
-
-### 8. Build and Run
-  - `dub build`
-  - `dub run`
-
-### 9. Debug with F5 in VS Code
-
----
-
-You now have a working D project that builds, runs and debugs in Windows 11 using VS Code and DMD only.
+> **Sidebar:**
+> This approach differs from the book "Programming in D" by providing full F5 debugging support on Windows 11 and eliminating the tedium and errors of manually copying files between projects. With this method, you can easily create a new minimal D project that supports F5 debugging and writes to the Terminal pane with a single command.

@@ -1,60 +1,24 @@
-## Making `npw` Globally Available
 
 
-To use `npw` from any folder in your terminal:
+# Project Creation Workflow
 
-1. Open your Terminal (PowerShell).
-2. Copy and paste the following command, then run it:
+## One-Time Setup
 
-  ```powershell
-  powershell -File .\setup_npw_global.ps1
-  ```
+To set up your D development environment, follow the instructions in FROM_SCRATCH.md. This is a one-time process that prepares your system and creates the `hello_d_windows` project, which contains all templates and scripts needed for new projects.
 
-This will:
-- Copy `npw.ps1` to a user scripts directory (e.g., `C:\Users\YourName\scripts`)
-- Create a wrapper `npw.cmd` for easy calling
-- Add the scripts directory to your user PATH if needed
+**Important:**
+- Do not edit or delete the `hello_d_windows` project/directory. It is required to easily create new projects with `np.ps1`.
 
-After running the setup, you can simply call:
+## Creating a New D Project
 
-```
-npw -name my_new_project -description "My new D project for Windows"
-```
+Each time you want to create a new D project:
 
-from any folder, and a new project will be created as a subfolder.
-# How to Build, Run, and Debug This D Project
+1. Navigate to the parent folder where you want your new project (e.g., `C:\dev\d`).
+2. Open the VS Code Terminal (Terminal).
+3. (Optional, for repo updates) Periodically—such as every month or quarter—update your setup:
+   - Run: `git clone https://github.com/brotherbill/hello_d_windows`
+   - Run: `setup_np_global.ps1`
+5. Create your new project:
+   `np -name my_next_d_project -description "description of my next d project"`
 
-## 1. Build and Run from the Terminal
-
-Open the VS Code Terminal (View > Terminal).
-- To build the project:
-  - `dub build`
-- To run the project:
-  - `dub run`
-- The output will appear in the terminal pane.
-
-## 2. Clean Build Artifacts
-
-- To remove generated .exe and .pdb files, run the VS Code task:
-  - Press Ctrl+Shift+P, type `Run Task`, and select `clean`.
-S
-## 3. Debug with F5 in VS Code
-
-- Set a breakpoint:
-  - Click to the left of a line number in `source/app.d` (a red dot will appear).
-- Press F5 or go to Run > Start Debugging.
-- If prompted, select `Debug D project`.
-- The program will start under the debugger and stop at your breakpoint.
-- You can step through code, inspect variables, and view output in the terminal pane.
-
-
-## Limitations of Programming in D on Windows
-
-1. **Console Buffering:**
-  - Using `write("I'm hiding");` will not buffer as expected on Windows. Output is eagerly flushed to the console, even without a newline or explicit flush. This is a limitation of the Windows console and D runtime on Windows.
-
-2. **Linking with std.random:**
-  - On Windows, linking with `std.random` may fail due to a known issue with the DMD toolchain. There is a workaround, which will be explained when you reach a lesson that uses random numbers.
-
-3. **Compiler Accessibility:**
-  - The DMD compiler is easily accessible. The GDC and LDC compilers are more challenging to add to the project, and are outside the scope of this course for the Windows environment.
+See FROM_SCRATCH.md for full setup details and troubleshooting.
