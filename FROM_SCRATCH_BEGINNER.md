@@ -46,6 +46,7 @@ Welcome! This guide will walk you through setting up your computer for D program
 2. **Download and install the DMD D compiler:**  
    Visit <https://dlang.org>, click "Download Windows Installer," and follow the prompts. Accept all default options.  
    > *Beginner Tip:* If you see a warning about the download, refer to the "Handling Download Warnings for the D Installer" section above for step-by-step instructions.  
+   > *Beginner Tip:* Once the download is complete, open the downloaded file to start the installer. This will install the D language resources on your computer.  
    > *Beginner Tip:* The DMD compiler lets your computer understand and run D programs.
 3. **Install the D language extension in VS Code:**  
    Open VS Code. Press Ctrl+Shift+X to open Extensions. Search for `code-d` by WebFreak and click Install.  
