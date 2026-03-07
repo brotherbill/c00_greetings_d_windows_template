@@ -71,8 +71,8 @@ Welcome! This guide will walk you through setting up your computer for D program
    > **Note:** You may see a "Reinstall serve-d" notification in VS Code. It is not needed—just close the notification.
 
 4. **Choose where to keep your D projects:**  
-   In File Explorer, go to the folder where you want to store your D projects (for example, `C:\dev\d`).  
-   > *Beginner Tip:* You can create a new folder if you want. Right-click and choose "New Folder."
+   In File Explorer, create the folder path where you want to store your D projects (for example, `C:\dev\d`).  Close File Explorer.
+   > *Beginner Tip:* To create a new folder, right-click and choose "New > Folder."
 5. **Open the VS Code Terminal:**  
    In VS Code, click "Terminal" in the top menu."  
    > *Beginner Tip:* The terminal is where you type commands for your computer to run.
