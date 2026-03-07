@@ -1,16 +1,14 @@
 param(
     [Parameter(Mandatory, Position=0)]
-    [Alias("Name")]
     [string]$name,
     [Parameter(Mandatory, Position=1)]
-    [Alias("Description")]
     [string]$description
 )
 $repoUrl = 'https://github.com/brotherbill/hello_d_windows'
 $dest = $name
 if (Test-Path $dest) {
-    Write-Error "Directory '$dest' already exists."
-    exit 1
+    Write-Host "[INFO] The directory '$dest' already exists. Please choose a different project name or delete the existing directory if you want to recreate it. No files were changed."
+    return
 }
 git clone $repoUrl $dest
 if (!(Test-Path $dest)) {
@@ -25,12 +23,14 @@ foreach ($file in $files) {
 # Update description in dub.json
 $dubFile = Join-Path $dest 'dub.json'
 if (Test-Path $dubFile) {
-    (Get-Content $dubFile) -replace '"description": ".*?"', '"description": "' + $description + '"' | Set-Content $dubFile
+    $dubContent = (Get-Content $dubFile -Raw)
+    $dubContent -replace '"description": ".*?"', '"description": "' + $description + '"' | Set-Content $dubFile
 }
 # Update description in launch.json if present
 $launchFile = Join-Path $dest '.vscode/launch.json'
 if (Test-Path $launchFile) {
-    (Get-Content $launchFile) -replace '"description": ".*?"', '"description": "' + $description + '"' | Set-Content $launchFile
+    $launchContent = (Get-Content $launchFile -Raw)
+    $launchContent -replace '"description": ".*?"', '"description": "' + $description + '"' | Set-Content $launchFile
 }
 Write-Host "Project '$name' created and customized."
 
