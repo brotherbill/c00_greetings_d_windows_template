@@ -94,12 +94,12 @@ When finished, close VS Code.
    On Completed page, uncheck: View Release Notes, then click Finish. Close browser.
    Run: `cd C:\dev\d`  This ensure that this folder will be the parent of our new project.
 
-   `git clone https://github.com/brotherbill/hello_d_windows`
-   Press Enter. This will create a folder called `hello_d_windows` in your chosen location.  
+   `git clone https://github.com/brotherbill/c00_hello_d_windows`
+   Press Enter. This will create a folder called `c00_hello_d_windows` in your chosen location.  
 
-   Run: `cd ./hello_d_windows`  Open Folder to `C:\dev\d\hello_d_windows\`
+   Run: `cd ./c00_hello_d_windows`  Open Folder to `C:\dev\d\c00_hello_d_windows\`
 
-   > **Do not edit or delete `hello_d_windows`—it is needed for new project creation.**
+   > **Do not edit or delete `c00_hello_d_windows`—it is needed for new project creation.**
 
 7. **Set up the project creation script:**  
    In the terminal, run:

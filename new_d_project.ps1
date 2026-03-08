@@ -4,7 +4,7 @@ param(
     [Parameter(Mandatory, Position=1)]
     [string]$description
 )
-$repoUrl = 'https://github.com/brotherbill/hello_d_windows'
+$repoUrl = 'https://github.com/brotherbill/c00_hello_d_windows'
 $dest = $name
 if (Test-Path $dest) {
     Write-Host "[INFO] The directory '$dest' already exists. Please choose a different project name or delete the existing directory if you want to recreate it. No files were changed."
