@@ -83,8 +83,9 @@ When finished, close VS Code.
 
 5. **Choose where to keep your D projects:**  
    In File Explorer, create the folder path where you want to store your D projects (for example, `C:\dev\d`).  Close File Explorer.  It will be easier to follow this course if you store your D projects there.
+   
    > *Beginner Tip:* To create a new folder, right-click and choose "New > Folder."
-
+   
 6. **Open the VS Code Terminal:**  
    In VS Code, select `Terminal > New Terminal` in the top menu."  
 
@@ -94,7 +95,7 @@ When finished, close VS Code.
    In the terminal, run: `git --version`
    If you get error messages, then 
 
-   1. install Git from <https://git-scm.com>
+   1. Install Git from <https://git-scm.com>
 
    2. On Completed page, uncheck: View Release Notes, then click Finish. Close browser.
 
@@ -133,8 +134,8 @@ When finished, close VS Code.
 
 
    `cd C:\dev\d`  Sets parent folder for adding my_next_d_project.
-   `new_d_project -name my_next_d_project -description "description of my next d project"`
-   Press Enter. This will create a new folder for your project and populate it with a minimal d project files.
+   `new_d_project -name my_next_d_project -description "description of my next D project"`
+   Press Enter. This will create a new folder for your project and populate it with a minimal D project files.
 
 11. **Open and debug your project:**  
     In VS Code, open the new project folder. Open `source/app.d`. Click the margin next to line 5 to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step and print "Greetings, D!" to the Terminal. Press F5 again to finish running the program.  
