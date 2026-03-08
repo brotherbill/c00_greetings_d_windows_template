@@ -52,10 +52,10 @@ When finished, close VS Code.
    > *Beginner Tip:* On completing the VS Code Setup wizard, you may uncheck "Launch Visual Studio Code"—it isn't needed for the next step.  
    > *Beginner Tip:* Visual Studio Code (VS Code) is a free code editor. It's safe to install and is used by millions of developers.
 
-2. **Install Visual Studio 2019:**
-   If you do not already have Visual Studio 2019 installed, you may need it for D development tools and libraries.
+2. **Install Visual Studio 2026:**
+   If you do not already have Visual Studio 2026 installed, you may need it for D development tools and libraries.
 
-   1. Download the Visual Studio 2019 installer from the official Microsoft website.
+   1. Download the Visual Studio 2026 installer from the official Microsoft website.
    2. Accept all default options in the Visual Studio installer.
    3. If you see a step with an "Install" button, click Install.
    4. If you see a dialog asking "Do you want to continue without workloads?", click Continue. You do not need to select or install any workloads for D development.
@@ -83,9 +83,9 @@ When finished, close VS Code.
 
 5. **Choose where to keep your D projects:**  
    In File Explorer, create the folder path where you want to store your D projects (for example, `C:\dev\d`).  Close File Explorer.  It will be easier to follow this course if you store your D projects there.
-   
+
    > *Beginner Tip:* To create a new folder, right-click and choose "New > Folder."
-   
+
 6. **Open the VS Code Terminal:**  
    In VS Code, select `Terminal > New Terminal` in the top menu."  
 
@@ -107,7 +107,7 @@ When finished, close VS Code.
 
    6. Run `git --version`  You should see its version number.
 
-8. Run: `cd C:\dev\d`  This ensure that this folder will be the parent of our new project.
+8. Run: `cd C:\dev\d`  This ensures that this folder will be the parent of our new project.
 
    `git clone https://github.com/brotherbill/c00_hello_d_windows`
    Press Enter. This will create a folder called `c00_hello_d_windows` in your chosen location.  
@@ -124,21 +124,26 @@ When finished, close VS Code.
    If CurrentUser is `Undefined`, run: (Answer: [Y] for Yes)
         `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`
 
-   `.\setup_new_d_project_global`  (It will add the .ps1 for you)
+   `.\setup_new_d_project_global.ps1`  (You may omit the `.ps1` extension)
    Press Enter. This makes the `new_d_project` script available to just you, everywhere on your computer.  
 
    Close VS Code.
 
 10. **Create your first D project:**  
-      In the terminal, type:
 
+11. Open Terminal with Windows-key `terminal`
+    In the terminal, type:
 
-   `cd C:\dev\d`  Sets parent folder for adding my_next_d_project.
-   `new_d_project -name my_next_d_project -description "description of my next D project"`
-   Press Enter. This will create a new folder for your project and populate it with a minimal D project files.
+   	`cd C:\dev\d`  Sets parent folder for adding my_next_d_project.
+   	`new_d_project -name my_next_d_project -description "description of my next D project"`
+   	Press Enter. This will create a new folder for your project and populate it with minimal D project files.
+
+​      Close Terminal.
 
 11. **Open and debug your project:**  
-    In VS Code, open the new project folder. Open `source/app.d`. Click the margin next to line 5 to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step and print "Greetings, D!" to the Terminal. Press F5 again to finish running the program.  
+    
+    Open VS Code, then open folder: `C:\dev\d\my_next_d_project`. Open `source/app.d`. Click the margin next to line 5 to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step and print "Greetings, D!" to the Terminal. Press F5 again to finish running the program.  
+    
     > *Beginner Tip:* Breakpoints let you pause your program and see what it’s doing. F5 starts or continues, F10 steps one line.
 
 Congratulations! You are now ready to start learning and building D projects on Windows.
