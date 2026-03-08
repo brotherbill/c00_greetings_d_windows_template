@@ -24,13 +24,13 @@ foreach ($file in $files) {
 $dubFile = Join-Path $dest 'dub.json'
 if (Test-Path $dubFile) {
     $dubContent = (Get-Content $dubFile -Raw)
-    $dubContent -replace '"description": ".*?"', '"description": "' + $description + '"' | Set-Content $dubFile
+        $dubContent -replace '"description": ".*?"', ('"description": "' + $description + '"') | Set-Content $dubFile
 }
 # Update description in launch.json if present
 $launchFile = Join-Path $dest '.vscode/launch.json'
 if (Test-Path $launchFile) {
     $launchContent = (Get-Content $launchFile -Raw)
-    $launchContent -replace '"description": ".*?"', '"description": "' + $description + '"' | Set-Content $launchFile
+        $launchContent -replace '"description": ".*?"', ('"description": "' + $description + '"') | Set-Content $launchFile
 }
 Write-Host "Project '$name' created and customized."
 
