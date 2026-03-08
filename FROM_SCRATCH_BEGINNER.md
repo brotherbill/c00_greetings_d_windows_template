@@ -82,7 +82,7 @@ When finished, close VS Code.
    >     **Note:** You may see a "Reinstall serve-d" notification in VS Code. It is not needed—just close the notification.  If prompted to change compilers, just close the notification.
 
 5. **Choose where to keep your D projects:**  
-   In File Explorer, create the folder path where you want to store your D projects (for example, `C:\dev\d`).  Close File Explorer.
+   In File Explorer, create the folder path where you want to store your D projects (for example, `C:\dev\d`).  Close File Explorer.  It will be easier to follow this course if you store your D projects there.
    > *Beginner Tip:* To create a new folder, right-click and choose "New > Folder."
 
 6. **Open the VS Code Terminal:**  
@@ -129,7 +129,7 @@ When finished, close VS Code.
    Close VS Code.
 
 10. **Create your first D project:**  
-   In the terminal, type:
+      In the terminal, type:
 
 
    `cd C:\dev\d`  Sets parent folder for adding my_next_d_project.
