@@ -3,11 +3,12 @@
 		"dlang.school"
 	],
 	"copyright": "Copyright © 2026",
-	"description": "A minimal D application.",
+	"description": "description of my next d project",
 	"license": "proprietary",
-	"name": "c00_hello_d_windows",
+	"name": "my_next_d_project",
 	"targetType": "executable",
 	"sourcePaths": [
 		"source"
 	]
 }
+
