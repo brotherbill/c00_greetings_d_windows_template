@@ -87,58 +87,52 @@ When finished, close VS Code.
    > *Beginner Tip:* To create a new folder, right-click and choose "New > Folder."
 
 6. **Open the VS Code Terminal:**  
-   In VS Code, select `Terminal > New Terminal` in the top menu."  
+   In VS Code, 
+
+   1. select `Terminal > New Terminal` in the top menu."  
+
 
    > *Beginner Tip:* The terminal is where you type commands for your computer to run.
 
-7. **Download the project template:**  
-   In the terminal, run: `git --version`
-   If you get error messages, then 
+   2. **Download the project template:**  
+      1. In the terminal, run: `git --version`
+         If you get error messages, then 
+         1. Install Git from <https://git-scm.com>
+         2. On Completed page, uncheck: View Release Notes, then click Finish. Close browser.
+         3. Close VS Code
+         4. Open VS Code
+         5. Open Terminal 
+            1. Run `git --version`  You should see its version number.
 
-   1. Install Git from <https://git-scm.com>
+      2. Run: `cd C:\dev\d`  This ensures that this folder will be the parent of our new project.
+      3. Run: `git clone https://github.com/brotherbill/c00_hello_d_windows`
+         This will create a folder called `c00_hello_d_windows` with a canned D project in your chosen location.  
 
-   2. On Completed page, uncheck: View Release Notes, then click Finish. Close browser.
-
-   3. Close VS Code
-
-   4. Open VS Code
-
-   5. Open Terminal 
-
-   6. Run `git --version`  You should see its version number.
-
-8. Run: `cd C:\dev\d`  This ensures that this folder will be the parent of our new project.
-
-   `git clone https://github.com/brotherbill/c00_hello_d_windows`
-   Press Enter. This will create a folder called `c00_hello_d_windows` in your chosen location.  
-
-   Run: `cd ./c00_hello_d_windows`  
-
-   Open Folder to `C:\dev\d\c00_hello_d_windows`
+      4. Run: `cd ./c00_hello_d_windows`  
+      5. Open Folder to `C:\dev\d\c00_hello_d_windows`
 
    > **Do not edit or delete `c00_hello_d_windows`—it is needed for new project creation.**
 
-9. **Set up the project creation script:**  
-   In the terminal, run:
-   `Get-ExecutionPolicy -List`  
-   If CurrentUser is `Undefined`, run: (Answer: [Y] for Yes)
-        `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`
+7. **Set up the project creation script:**  
+   
+   1. In the terminal, run:
+      `Get-ExecutionPolicy -List`  
+      If CurrentUser is `Undefined`, run: (Answer: [Y] for Yes)
+           `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`
+   
+   2. `.\setup_new_d_project_global.ps1`  (You may omit the `.ps1` extension)
+      Press Enter. This makes the `new_d_project` script available to just you, everywhere on your computer.  
+   
+   3. Close VS Code.
+   
+8. **Create your first D project:**  
 
-   `.\setup_new_d_project_global.ps1`  (You may omit the `.ps1` extension)
-   Press Enter. This makes the `new_d_project` script available to just you, everywhere on your computer.  
-
-   Close VS Code.
-
-10. **Create your first D project:**  
-
-11. Open Terminal with Windows-key `terminal`
-    In the terminal, type:
-
+   1. Open Terminal with Windows-key `terminal`
+   2. In the terminal, run:
    	`cd C:\dev\d`  Sets parent folder for adding my_next_d_project.
    	`new_d_project -name my_next_d_project -description "description of my next D project"`
    	Press Enter. This will create a new folder for your project and populate it with minimal D project files.
-
-​      Close Terminal.
+   3. Close Terminal.
 
 11. **Open and debug your project:**  
     
