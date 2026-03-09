@@ -15,8 +15,8 @@ Consider using the provided Ubuntu VM setup for a smoother D experience.
 
 ## Project Setup
 1. Install VS Code, DMD, and the `code-d` extension.
-2. Clone the template: `git clone https://github.com/brotherbill/hello_d_windows`
-   - Do not delete/edit `hello_d_windows` (used for scaffolding).
+2. Clone the template: `git clone https://github.com/brotherbill/c00_greetings_d_windows_template`
+   - Do not delete/edit `c00_greetings_d_windows_template` (used for scaffolding).
 3. Run `setup_new_d_project_global.ps1` to install the `new_d_project` project generator.
 4. Create a new project:
    `new_d_project -name my_next_d_project -description "desc"`

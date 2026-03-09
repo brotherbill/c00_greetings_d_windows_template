@@ -1,18 +1,51 @@
+
+
 # FROM_SCRATCH_EXPERT.md
 
-Quick setup for D development on Windows (for experienced users):
+Quick, scriptable setup for D development on Windows 11 (for experienced users):
 
-1. Install VS Code: https://code.visualstudio.com/
-2. Install DMD: https://dlang.org ("Download Windows Installer", defaults OK)
-   - After clicking "Download Windows Installer", Windows may warn you that D language isn't commonly downloaded. You can safely continue with the installation.
-   - If you need step-by-step instructions for handling browser or Windows download warnings, see the relevant section in FROM_SCRATCH_BEGINNER.md—even experienced developers may not have encountered these issues before.
-3. Install `code-d` extension in VS Code (Ctrl+Shift+X, search "code-d").
-4. Choose a dev folder (e.g., `C:\dev\d`).
-5. Open VS Code terminal.
-6. Clone template: `git clone https://github.com/brotherbill/hello_d_windows`
-   - Do not delete or edit `hello_d_windows` (used for project scaffolding).
-7. Run `setup_np_global.ps1` to globally install the `np` project generator script.
-8. Create a new project: `np -name my_next_d_project -description "description here"`
-9. Open the new project in VS Code, set a breakpoint in `source/app.d`, F5 to debug, F10 to step.
+1. **Download and install Visual Studio Code**
+   - https://code.visualstudio.com/ (defaults OK)
+   - Install C/C++ extension (Microsoft)
 
-Full F5 debugging and VS Code Terminal integration are supported out of the box. For troubleshooting or details, see FROM_SCRATCH_BEGINNER.md.
+2. **Install Visual Studio 2026**
+   - Download from Microsoft, defaults OK
+   - No workloads needed for D
+
+3. **Install DMD D Compiler**
+   - https://dlang.org (Windows installer)
+   - On "Choose Visual Studio Installation", select "Do nothing"
+
+4. **Install code-d Extension**
+   - VS Code: Ctrl+Shift+X, search "code-d" (WebFreak)
+
+5. **Choose Project Folder**
+   - e.g., `C:\dev\d` (ensure full path exists; create any missing part)
+
+6. **Clone Project Template**
+   ```powershell
+   cd C:\dev\d
+   git clone https://github.com/brotherbill/c00_greetings_d_windows_template
+   cd c00_greetings_d_windows_template
+   ```
+
+7. **Set Up Project Creation Script**
+   ```powershell
+   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+   ./setup_new_d_project_global.ps1
+   ```
+
+8. **Create a New D Project**
+   ```powershell
+   new_d_project -name my_next_d_project -description "description of my next D project"
+   ```
+
+9. **Open and Debug**
+   - Open VS Code, open the new project folder
+   - Set a breakpoint in `source/app.d`, F5 to debug, F10 to step
+
+---
+
+- No hand-holding, no screenshots
+- All steps are scriptable and repeatable
+- For troubleshooting, see FROM_SCRATCH_BEGINNER.md or search error messages

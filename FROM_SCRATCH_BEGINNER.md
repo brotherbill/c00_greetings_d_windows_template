@@ -81,16 +81,16 @@ When finished, close VS Code.
    >     *Beginner Tip:* If prompted, click the "Trust Publishers & Install" button to continue installing the extension.
    >     **Note:** You may see a "Reinstall serve-d" notification in VS Code. It is not needed—just close the notification.  If prompted to change compilers, just close the notification.
 
-5. **Choose where to keep your D projects:**  
-   In File Explorer, create the folder path where you want to store your D projects (for example, `C:\dev\d`).  Close File Explorer.  It will be easier to follow this course if you store your D projects there.
 
-   > *Beginner Tip:* To create a new folder, right-click and choose "New > Folder."
+5. **Choose where to keep your D projects:**  
+   In File Explorer, create the full folder path where you want to store your D projects (for example, `C:\dev\d`). If any part of the path (such as `C:\dev` or `C:\dev\d`) does not exist, create it now. At the end of this step, the entire `C:\dev\d` path should exist, even if some parts already existed before. Close File Explorer. It will be easier to follow this course if you store your D projects there.
+
+   > *Beginner Tip:* To create a new folder, right-click and choose "New > Folder." If a parent folder (like `C:\dev`) does not exist, create it first, then create `d` inside it.
 
 6. **Open the VS Code Terminal:**  
    In VS Code, 
 
    1. select `Terminal > New Terminal` in the top menu."  
-
 
    > *Beginner Tip:* The terminal is where you type commands for your computer to run.
 
@@ -105,13 +105,13 @@ When finished, close VS Code.
             1. Run `git --version`  You should see its version number.
 
       2. Run: `cd C:\dev\d`  This ensures that this folder will be the parent of our new project.
-      3. Run: `git clone https://github.com/brotherbill/c00_hello_d_windows`
-         This will create a folder called `c00_hello_d_windows` with a canned D project in your chosen location.  
+      3. Run: `git clone https://github.com/brotherbill/c00_greetings_d_windows_template`
+         This will create a folder called `c00_greetings_d_windows_template` in your chosen location.  
 
-      4. Run: `cd ./c00_hello_d_windows`  
-      5. Open Folder to `C:\dev\d\c00_hello_d_windows`
+      4. Run: `cd ./c00_greetings_d_windows_template`  
+      5. Open the folder `C:\dev\d\c00_greetings_d_windows_template` in VS Code.
 
-   > **Do not edit or delete `c00_hello_d_windows`—it is needed for new project creation.**
+   > **Do not edit or delete `c00_greetings_d_windows_template`—this is a template for new D projects. Always create a new project before making changes.**
 
 7. **Set up the project creation script:**  
    

@@ -20,10 +20,11 @@ As an alternative to working directly in Windows, this course also provides inst
 # Quick Reference: Creating New D Projects
 
 ## One-Time Setup
-Follow FROM_SCRATCH.md to set up your environment. This will install all prerequisites and create the `hello_d_windows` project, which contains the templates and scripts for new projects.
+
+Follow FROM_SCRATCH.md to set up your environment. This will install all prerequisites and create the `c00_greetings_d_windows_template` project, which contains the templates and scripts for new projects.
 
 **Note:**
-- Do not edit or delete the `hello_d_windows` directory. It is required for creating new projects with `new_d_project.ps1`.
+- Do not edit or delete the `c00_greetings_d_windows_template` directory. It is required for creating new projects with `new_d_project.ps1`.
 
 ## Creating a New D Project
 To create a new D project:
@@ -31,7 +32,7 @@ To create a new D project:
 1. Go to the parent folder where you want your new project (e.g., `C:\dev\d`).
 2. Open VS Code, open the folder containing your D project, and open the Terminal.
 3. (Optional, for updates) Every month or quarter, update your setup:
-   - Run: `git clone https://github.com/brotherbill/hello_d_windows`
+   - Run: `git clone https://github.com/brotherbill/c00_greetings_d_windows_template`
    - Run: `setup_new_d_project_global.ps1`
 
 4. Create your new project:

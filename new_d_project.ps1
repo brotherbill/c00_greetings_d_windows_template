@@ -4,7 +4,7 @@ param(
     [Parameter(Mandatory, Position=1)]
     [string]$description
 )
-$repoUrl = 'https://github.com/brotherbill/c00_hello_d_windows'
+$repoUrl = 'https://github.com/brotherbill/c00_greetings_d_windows_template'
 $dest = $name
 if (Test-Path $dest) {
     Write-Host "[INFO] The directory '$dest' already exists. Please choose a different project name or delete the existing directory if you want to recreate it. No files were changed."
@@ -18,7 +18,7 @@ if (!(Test-Path $dest)) {
 # Replace all references in all files
 $files = Get-ChildItem -Path $dest -Recurse -File -Include *.md,*.json,*.d,*.gitignore
 foreach ($file in $files) {
-    (Get-Content $file.PSPath) -replace 'c00_hello_d_windows', $name | Set-Content $file.PSPath
+    (Get-Content $file.PSPath) -replace 'c00_greetings_d_windows_template', $name | Set-Content $file.PSPath
 }
 # Update description in dub.json
 $dubFile = Join-Path $dest 'dub.json'
