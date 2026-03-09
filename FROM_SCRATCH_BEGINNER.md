@@ -125,20 +125,24 @@ When finished, close VS Code.
    
    3. Close VS Code.
    
-8. **Create your first D project:**  
 
-   1. Open Terminal with Windows-key `terminal`
+8. **Create your first D project:**
+
+   1. Open the Terminal (Windows key, then type "terminal" or use VS Code's Terminal > New Terminal).
    2. In the terminal, run:
-   	`cd C:\dev\d`  Sets parent folder for adding my_next_d_project.
-   	`new_d_project -name my_next_d_project -description "description of my next D project"`
-   	Press Enter. This will create a new folder for your project and populate it with minimal D project files.
+      ```powershell
+      cd C:\dev\d
+      new_d_project -name tic_tac_toe_project -description "this plays tic-tac-toe against one player"
+      ```
+      Press Enter. This will create a new folder for your project and populate it with minimal D project files.
    3. Close Terminal.
 
-11. **Open and debug your project:**  
-    
-    Open VS Code, then open folder: `C:\dev\d\my_next_d_project`. Open `source/app.d`. Click the margin next to line 5 to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step and print "Greetings, D!" to the Terminal. Press F5 again to finish running the program.  
-    
-    > *Beginner Tip:* Breakpoints let you pause your program and see what it’s doing. F5 starts or continues, F10 steps one line.
+
+11. **Open and debug your project:**
+
+   Open VS Code, then open the new project folder (e.g., `C:\dev\d\tic_tac_toe_project`). Open `source/app.d`. Click the margin next to a line to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step through your code.
+
+   > *Beginner Tip:* Breakpoints let you pause your program and see what it’s doing. F5 starts or continues, F10 steps one line.
 
 Congratulations! You are now ready to start learning and building D projects on Windows.
 

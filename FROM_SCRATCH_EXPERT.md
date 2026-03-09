@@ -1,6 +1,4 @@
-
-
-# FROM_SCRATCH_EXPERT.md
+# DowFROM_SCRATCH_EXPERT.md
 
 Quick, scriptable setup for D development on Windows 11 (for experienced users):
 
@@ -9,9 +7,10 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
    - Install C/C++ extension (Microsoft)
 
 2. **Install Visual Studio 2026**
+   
    - Download from Microsoft, defaults OK
    - No workloads needed for D
-
+   
 3. **Install DMD D Compiler**
    - https://dlang.org (Windows installer)
    - On "Choose Visual Studio Installation", select "Do nothing"
@@ -30,16 +29,20 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
    ```
 
 7. **Set Up Project Creation Script**
+   
    ```powershell
    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
    ./setup_new_d_project_global.ps1
    ```
-
+   
 8. **Create a New D Project**
+   
    ```powershell
-   new_d_project -name my_next_d_project -description "description of my next D project"
+   new_d_project -name tic_tac_toe_project -description "this plays tic-tac-toe against one player"
    ```
-
+   
+   
+   
 9. **Open and Debug**
    - Open VS Code, open the new project folder
    - Set a breakpoint in `source/app.d`, F5 to debug, F10 to step
