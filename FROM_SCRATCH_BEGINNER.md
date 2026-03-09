@@ -120,7 +120,7 @@ When finished, close VS Code.
    > **Do not edit or delete `c00_greetings_d_windows_template`—this is a template for new D projects. Always create a new project before making changes.**
    
 7. **Set Up Project Creation Script**
-   
+
    1. In the terminal, run:
       `Get-ExecutionPolicy -List`  
       If CurrentUser is `Undefined`, run: (Answer: [Y] for Yes)
@@ -133,15 +133,16 @@ When finished, close VS Code.
    
    4. Close Terminal.
    
-8. **Create a New D Project**
+8. **Create a New D Project with CLI**
 
    1. Open the Terminal (Windows key, then type "terminal" or use VS Code's Terminal > New Terminal).
-   2. In the terminal, run:
+   2. In the terminal, run these two commands:
       ```powershell
       cd C:\dev\d
-      new_d_project -name tic_tac_toe_project -description "this plays tic-tac-toe against one player"
+      
+      new_d_project -name tic_tac_toe -description "this plays tic-tac-toe with two players, one player, or zero players.  (See War Games movie, 1983)"
       ```
-      Press Enter. This will create a new folder for your project and populate it with minimal D project files.
+      This will create a new folder for your project and populate it with minimal D project files.
    3. Close Terminal.
 
 

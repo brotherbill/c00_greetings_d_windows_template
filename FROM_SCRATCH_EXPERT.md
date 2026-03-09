@@ -23,31 +23,29 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
    - e.g., `C:\dev\d` (ensure full path exists; create any missing part)
 
 6. **Clone Project Template**
-   ```powershell
-   cd C:\dev\d
-   git clone https://github.com/brotherbill/c00_greetings_d_windows_template
-   cd c00_greetings_d_windows_template
-   ```
+```powershell
+cd C:\dev\d
 
+git clone https://github.com/brotherbill/c00_greetings_d_windows_template
 
-   ```
+cd c00_greetings_d_windows_template
+```
 
 7. **Set Up Project Creation Script**
-   
-   ```powershell
-   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-   cd C:\dev\d\c00_greetings_d_windows_template
-   ./setup_new_d_project_global.ps1
-   ```
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+cd C:\dev\d\c00_greetings_d_windows_template
+
+./setup_new_d_project_global.ps1
+```
 
 8. **Create a New D Project**
-   
-   ```powershell
-   new_d_project -name tic_tac_toe_project -description "this plays tic-tac-toe against one player"
-   ```
-   
-   
-   
+```powershell
+cd C:\dev\d
+
+new_d_project -name tic_tac_toe -description "this plays tic-tac-toe with two players, one player, or zero players.  (See War Games movie, 1983)"
+```
 9. **Open and Debug**
    - Open VS Code, open the new project folder
    - Set a breakpoint in `source/app.d`, F5 to debug, F10 to step
