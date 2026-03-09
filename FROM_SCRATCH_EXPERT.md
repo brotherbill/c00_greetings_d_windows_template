@@ -26,6 +26,8 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
    cd C:\dev\d
    git clone https://github.com/brotherbill/c00_greetings_d_windows_template
    cd c00_greetings_d_windows_template
+
+
    ```
 
 7. **Set Up Project Creation Script**
@@ -34,7 +36,7 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
    ./setup_new_d_project_global.ps1
    ```
-   
+
 8. **Create a New D Project**
    
    ```powershell
