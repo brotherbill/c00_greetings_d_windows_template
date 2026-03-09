@@ -37,7 +37,7 @@ When downloading the D installer, your browser or Windows may warn you that the 
 
 Welcome! This guide will walk you through setting up your computer for D programming, step by step. No prior experience is required—just follow along and you'll be ready to write and debug D code in no time.
 
-1. **Download and install Visual Studio Code:**  
+1. **Download and install Visual Studio Code**
    Visit <https://code.visualstudio.com/>, click the download button, and run the installer. Accept the default options. Optionally, select "Create a desktop icon" to easily open VS Code by double-clicking it.
    
    After installing VS Code, open it and install the "C/C++" extension by Microsoft:
@@ -52,7 +52,7 @@ When finished, close VS Code.
    > *Beginner Tip:* On completing the VS Code Setup wizard, you may uncheck "Launch Visual Studio Code"—it isn't needed for the next step.  
    > *Beginner Tip:* Visual Studio Code (VS Code) is a free code editor. It's safe to install and is used by millions of developers.
 
-2. **Install Visual Studio 2026:**
+2. **Install Visual Studio 2026**
    If you do not already have Visual Studio 2026 installed, you may need it for D development tools and libraries.
 
    1. Download the Visual Studio 2026 installer from the official Microsoft website.
@@ -64,7 +64,7 @@ When finished, close VS Code.
    > *Note:* You do not need to launch Visual Studio itself—just close the installer window when finished.
    > *Note:* Installing Visual Studio may take several minutes. Please be patient while the installation completes.
 
-3. **Download and install the DMD D compiler:**  
+3. **Install DMD D Compiler**
    Visit <https://dlang.org>, click "Download Windows Installer," and follow the prompts. During installation:
    - Accept all default options,—just keep clicking Next, except for "Choose Visual Studio Installation".
    - For wizard step: "Choose Visual Studio Installation", select the last option: "Do nothing"
@@ -73,7 +73,7 @@ When finished, close VS Code.
    > *Beginner Tip:* If you see a warning about the download, refer to the "Handling Download Warnings for the D Installer" section above for step-by-step instructions.
    > *Beginner Tip:* Once the download is complete, open the downloaded file to start the installer. Windows will likely show a dialog: "Do you want to allow this app from an unknown publisher to make changes to your device?" This is normal for D—click Yes to continue with the installation.
    > *Beginner Tip:* The DMD compiler lets your computer understand and run D programs.
-4. **Install the D language extension in VS Code:**  
+4. **Install code-d Extension**
    Open VS Code. Press Ctrl+Shift+X to open Extensions. Search for `code-d` by WebFreak and click Install.  Close VS Code.
    >     *Beginner Tip:* Extensions add new features to VS Code. `code-d` helps you write and debug D code easily.
    >     *Beginner Tip:* After opening VS Code, you can optionally make it full screen (click the square icon in the top right or press F11) for a better editing experience.
@@ -82,12 +82,12 @@ When finished, close VS Code.
    >     **Note:** You may see a "Reinstall serve-d" notification in VS Code. It is not needed—just close the notification.  If prompted to change compilers, just close the notification.
 
 
-5. **Choose where to keep your D projects:**  
+5. **Choose Project Folder**
    In File Explorer, create the full folder path where you want to store your D projects (for example, `C:\dev\d`). If any part of the path (such as `C:\dev` or `C:\dev\d`) does not exist, create it now. At the end of this step, the entire `C:\dev\d` path should exist, even if some parts already existed before. Close File Explorer. It will be easier to follow this course if you store your D projects there.
 
    > *Beginner Tip:* To create a new folder, right-click and choose "New > Folder." If a parent folder (like `C:\dev`) does not exist, create it first, then create `d` inside it.
 
-6. **Open the VS Code Terminal:**  
+6. **Clone Project Template**
    In VS Code, 
 
    1. select `Terminal > New Terminal` in the top menu."  
@@ -113,7 +113,7 @@ When finished, close VS Code.
 
    > **Do not edit or delete `c00_greetings_d_windows_template`—this is a template for new D projects. Always create a new project before making changes.**
 
-7. **Set up the project creation script:**  
+7. **Set Up Project Creation Script**
    
    1. In the terminal, run:
       `Get-ExecutionPolicy -List`  
@@ -126,7 +126,7 @@ When finished, close VS Code.
    3. Close VS Code.
    
 
-8. **Create your first D project:**
+8. **Create a New D Project**
 
    1. Open the Terminal (Windows key, then type "terminal" or use VS Code's Terminal > New Terminal).
    2. In the terminal, run:
@@ -138,7 +138,7 @@ When finished, close VS Code.
    3. Close Terminal.
 
 
-11. **Open and debug your project:**
+9. **Open and Debug**
 
    Open VS Code, then open the new project folder (e.g., `C:\dev\d\tic_tac_toe_project`). Open `source/app.d`. Click the margin next to a line to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step through your code.
 

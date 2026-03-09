@@ -1,4 +1,4 @@
-# DowFROM_SCRATCH_EXPERT.md
+# FROM_SCRATCH_EXPERT.md
 
 Quick, scriptable setup for D development on Windows 11 (for experienced users):
 
