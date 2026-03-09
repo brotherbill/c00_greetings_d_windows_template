@@ -148,7 +148,7 @@ When finished, close VS Code.
 
 9. **Open and Debug**
 
-   Open VS Code, then open the new project folder (e.g., `C:\dev\d\tic_tac_toe_project`). Open `source/app.d`. Click the margin next to a line to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step through your code.
+   Open VS Code, then open the new project folder (e.g., `C:\dev\d\tic_tac_toe`). Open `source/app.d`. Click the margin next to a line to set a breakpoint (a red dot will appear). Press F5 to start debugging. When the program stops at the breakpoint, press F10 to step through your code.
 
    > *Beginner Tip:* Breakpoints let you pause your program and see what it’s doing. F5 starts or continues, F10 steps one line.
 
