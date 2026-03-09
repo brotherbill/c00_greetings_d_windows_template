@@ -126,10 +126,12 @@ When finished, close VS Code.
       If CurrentUser is `Undefined`, run: (Answer: [Y] for Yes)
            `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`
    
-   2. `.\setup_new_d_project_global.ps1`  (You may omit the `.ps1` extension)
+   2. Run: `cd C:\dev\d\c00_greetings_d_windows_template` to be at directory containing `setup_new_d_project_global.ps1`.
+   
+   3. Run: `.\setup_new_d_project_global.ps1`  (You may omit the `.ps1` extension)
       Press Enter. This makes the `new_d_project` script available to just you, everywhere on your computer.  
    
-   3. Close VS Code.
+   4. Close Terminal.
    
 8. **Create a New D Project**
 

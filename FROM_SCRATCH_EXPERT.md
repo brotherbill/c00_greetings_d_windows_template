@@ -12,9 +12,10 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
    - No workloads needed for D
    
 3. **Install DMD D Compiler**
+   
    - https://dlang.org (Windows installer)
    - On "Choose Visual Studio Installation", select "Do nothing"
-
+   
 4. **Install code-d Extension**
    - VS Code: Ctrl+Shift+X, search "code-d" (WebFreak)
 
@@ -26,6 +27,7 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
    cd C:\dev\d
    git clone https://github.com/brotherbill/c00_greetings_d_windows_template
    cd c00_greetings_d_windows_template
+   ```
 
 
    ```
@@ -34,6 +36,7 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
    
    ```powershell
    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+   cd C:\dev\d\c00_greetings_d_windows_template
    ./setup_new_d_project_global.ps1
    ```
 
