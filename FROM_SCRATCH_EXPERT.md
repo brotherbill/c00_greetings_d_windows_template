@@ -18,7 +18,7 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
 4. **Install code-d Extension**
    - VS Code: Ctrl+Shift+X, search "code-d" (WebFreak)
 
-5. **Choose Project Folder**
+5. **Create Project Folder**
    - e.g., `C:\dev\d` (ensure full path exists; create any missing part)
 
 6. **Clone Project Template**
