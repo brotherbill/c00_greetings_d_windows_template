@@ -98,24 +98,27 @@ When finished, close VS Code.
       1. In the terminal, run: `git --version`
          If you get error messages, then 
          1. Install Git from <https://git-scm.com>
+            1. Click: Install for Windows
+            2. Click near top on: Click here to download
          2. On Completed page, uncheck: View Release Notes, then click Finish. Close browser.
          3. Close VS Code
          4. Open VS Code
          5. Open Terminal 
             1. Run `git --version`  You should see its version number.
-
+         
       2. Run: `cd C:\dev\d`  This ensures that this folder will be the parent of our new project.
-
+      
       3. Run: `git clone https://github.com/brotherbill/c00_greetings_d_windows_template`
          This will create a folder called `c00_greetings_d_windows_template` in your chosen location.  
 
       > **Tip:** When printed, this command may appear as two lines. When copying, be sure to select both lines (all three words: 'git', 'clone', and the URL) to copy the full command correctly.
-
+      
       4. Run: `cd ./c00_greetings_d_windows_template`  
       5. Open the folder `C:\dev\d\c00_greetings_d_windows_template` in VS Code.
-
+         1. If asked whether you "trust the authors", check: Trust the authors of all files in the parent folder 'd', then click: Yes, I trust the authors.
+   
    > **Do not edit or delete `c00_greetings_d_windows_template`—this is a template for new D projects. Always create a new project before making changes.**
-
+   
 7. **Set Up Project Creation Script**
    
    1. In the terminal, run:
@@ -128,7 +131,6 @@ When finished, close VS Code.
    
    3. Close VS Code.
    
-
 8. **Create a New D Project**
 
    1. Open the Terminal (Windows key, then type "terminal" or use VS Code's Terminal > New Terminal).
