@@ -47,7 +47,7 @@ cd C:\dev\d
 new_d_project -name tic_tac_toe -description "this plays tic-tac-toe with two players, one player, or zero players.  (See War Games movie, 1983)"
 ```
 9. **Open and Debug**
-   - Open VS Code, open the new project folder
+   - Open VS Code, open the new `C:\dev\d\tic_tac_toe\`project folder
    - Set a breakpoint in `source/app.d`, F5 to debug, F10 to step
 
 ---
