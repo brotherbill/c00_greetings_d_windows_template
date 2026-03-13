@@ -5,26 +5,30 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug D project",
-            "type": "cppvsdbg",
+            "name": "Debug D project (Linux)",
+            "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/my_next_d_project.exe",
+            "program": "${workspaceFolder}/my_next_d_project",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "dub: build",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb"
         },
         {
-            "name": "Debug D project (Stop at entry)",
-            "type": "cppvsdbg",
+            "name": "Debug D project (Linux, Stop at entry)",
+            "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/my_next_d_project.exe",
+            "program": "${workspaceFolder}/my_next_d_project",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "dub: build",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }
