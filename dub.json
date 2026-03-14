@@ -1,0 +1,10 @@
+{
+    "name": "c00_greetings_d_wsl_ubuntu_template",
+    "description": "Minimal D hello world for Ubuntu",
+    "authors": ["Your Name"],
+    "license": "MIT",
+    "dependencies": {},
+    "targetType": "executable",
+    "sourcePaths": ["."],
+    "mainSourceFile": "app.d"
+}
