@@ -1,9 +1,20 @@
+
 param(
     [Parameter(Mandatory, Position=0)]
     [string]$name,
     [Parameter(Mandatory, Position=1)]
     [string]$description
 )
+
+# Check for existing project directories (case-ignorant)
+$parentDir = Split-Path -Parent (Resolve-Path .)
+$existingDirs = Get-ChildItem -Path $parentDir -Directory | Where-Object { $_.Name -ieq $name }
+if ($existingDirs) {
+    $matchedName = $existingDirs[0].Name
+    Write-Host "[INFO] A project named '$matchedName' already exists (case-ignorant match). Please choose a different project name. No files were changed."
+    return
+}
+
 $repoUrl = 'https://github.com/brotherbill/c00_greetings_d_windows_template'
 $dest = $name
 if (Test-Path $dest) {
