@@ -1,4 +1,10 @@
+# CREATE_NEW_D_PROJECT_BEGINNER.md
+---
+# CREATE_NEW_D_PROJECT_BEGINNER.md
+--- 
 # Issues in Running D Projects Directly in Windows 11
+When running D projects directly in Windows 11 (without this template and setup), you may encounter the following issues:
+...
 
 When running D projects directly in Windows 11 (without this template and setup), you may encounter the following issues:
 
@@ -34,15 +40,35 @@ To create a new D project:
 2. Open VS Code, open the folder containing your D project, and open the Terminal.
    > *Beginner Tip:* In VS Code, click "File" > "Open Folder..." to select your project folder. To open the Terminal, click "Terminal" > "New Terminal."
 3. (Optional, for updates) Every month or quarter, update your setup:
+   - Run: `cd C:\dev\d\`
+
    - Run: `git clone https://github.com/brotherbill/c00_greetings_d_windows_template`
-   - Run: `setup_np_global.ps1`
+
+   - Run: `cd C:\dev\d\c00_greetings_d_windows_template`
+
+   - Run: `.\setup_new_d_project_global.ps1`
    > *Beginner Tip:* Keeping your template up to date helps avoid bugs and ensures you have the latest features.
-4. Create your new project:
-   `np -name my_next_d_project -description "description of my next d project"`
-   > *Beginner Tip:* Replace `my_next_d_project` and the description with your own project name and a short summary.
-5. In VS Code, open the Explorer view (Ctrl+Shift+E), navigate to your new project folder, and select `app.d` to start editing your code.
-   > *Beginner Tip:* The Explorer is the file browser on the left side of VS Code. Double-click files to open them in the editor.
+4. Create and open a new project in VS Code:
    
+   For example, to create a project named `chess_master_2525`:
+   
+   - Run: `cd C:\dev\d\`
+
+   - Run: `new_d_project -name chess_master_2525 -description "A chess engine and GUI"`
+
+   - Run: `cd C:\dev\d\chess_master_2525`
+
+   - Run: `code .`
+
+   This will:
+   - Create a new folder called `chess_master_2525` in `C:\dev\d\`
+   - Set up all the files for your new D project
+   - Open the project in VS Code, ready for you to start coding
+
+   > *Beginner Tip:* Replace `chess_master_2525` and the description with your own project name and a short summary. The `code .` command opens the current folder in VS Code.
+
+   In VS Code, open the Explorer view (Ctrl+Shift+E), navigate to your new project folder, and select `app.d` to start editing your code. The Explorer is the file browser on the left side of VS Code. Double-click files to open them in the editor.
+
 For full details and troubleshooting, see FROM_SCRATCH.md.
 
 ## Running a New D Project
@@ -65,4 +91,4 @@ After creating your new D project, you can run and debug it in VS Code:
 This workflow lets you interactively debug your D program, inspect variables, and see output in the VS Code Terminal. For more details, see FROM_SCRATCH_BEGINNER.md or FROM_SCRATCH_EXPERT.md.
 
 > **Beginner Tip:** If you get stuck, don't give up! Programming takes practice, and every error is a chance to learn. Celebrate your progress and ask for help when you need it.
-  
+

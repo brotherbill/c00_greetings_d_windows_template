@@ -1,14 +1,9 @@
-# D Project Quick Reference (Expert)
+# README_EXPERT.md
+---
 
 This guide is for experienced developers setting up D projects on Windows using this template.
 
 ## Common Windows Issues
-- **No F5 Debugging:** Default D projects created with `dub init` do not support F5 debugging in VS Code out of the box. Use this template for full debug support.
-- **Console Output and Buffering:** In D, `write()` sends output to the console immediately, without buffering. Output may appear in the VS Code Terminal sooner than expected.
-- **std.random Issues:** On Windows, the D standard library's `std.random` may not link correctly, preventing compilation.
-- **Dub/Build Quirks:** Sometimes, `dub` or DMD may not pick up changes to dependencies or configuration files until you clean the build artifacts. Use the provided `clean` task or manually delete build outputs if you encounter strange build errors.
-- **Terminal/Console Differences:** Output and input behavior may differ between the VS Code Terminal, Windows Command Prompt, and PowerShell. Always test interactive programs in your target environment.
-- **Unicode, Path, and Permission Issues:** Unicode characters beyond standard ASCII may not render correctly in the VS Code Terminal on Windows, making some program output appear garbled or unreadable. Windows path length limits, spaces in folder names, or permission issues can cause unexpected build or runtime errors. Prefer short, simple paths without spaces for D project names.
 
 ## Alternative: Develop in Ubuntu VM
 Instructions are provided for setting up an Ubuntu VM. Developing in Linux avoids many Windows-specific issues with D and offers a more consistent experience.

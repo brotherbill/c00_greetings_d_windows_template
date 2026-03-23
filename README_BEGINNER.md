@@ -1,4 +1,10 @@
+# README_BEGINNER.md
+---
+# CREATE_NEW_D_PROJECT_BEGINNER.md
+--- 
 # Issues in Running D Projects Directly in Windows 11
+When running D projects directly in Windows 11 (without this template and setup), you may encounter the following issues:
+...
 
 When running D projects directly in Windows 11 (without this template and setup), you may encounter the following issues:
 

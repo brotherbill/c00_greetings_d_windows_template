@@ -1,3 +1,5 @@
+# FROM_SCRATCH_BEGINNER.md
+---
 > These instructions assume a fresh Windows 11 install, but they also work on systems with existing tools.
 
 > **Beginner Tip:** If you are new to programming or Windows setup, take your time with each step. If something doesn't look right, don't worry—just double-check the instructions or ask for help. Every programmer starts as a beginner!
