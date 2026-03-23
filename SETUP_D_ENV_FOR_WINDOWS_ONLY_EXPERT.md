@@ -1,4 +1,4 @@
-# FROM_SCRATCH_EXPERT.md
+# SETUP_D_ENV_FOR_WINDOWS_ONLY_EXPERT.md
 ---
 
 Quick, scriptable setup for D development on Windows 11 (for experienced users):
@@ -54,4 +54,4 @@ Quick, scriptable setup for D development on Windows 11 (for experienced users):
 
 - No hand-holding, no screenshots
 - All steps are scriptable and repeatable
-- For troubleshooting, see FROM_SCRATCH_BEGINNER.md or search error messages
+- For troubleshooting, see SETUP_D_ENV_FOR_WINDOWS_ONLY_BEGINNER.md or search error messages

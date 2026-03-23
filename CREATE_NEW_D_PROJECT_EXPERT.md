@@ -54,4 +54,4 @@ Instructions are provided for setting up an Ubuntu VM. Developing in Linux avoid
 4. Press F5 to launch in debug mode. Use F10 to step over lines.
 5. Continue debugging as required.
 
-For full details and troubleshooting, see FROM_SCRATCH_EXPERT.md or FROM_SCRATCH_BEGINNER.md.
+For full details and troubleshooting, see SETUP_D_ENV_FOR_WINDOWS_ONLY_EXPERT.md or SETUP_D_ENV_FOR_WINDOWS_ONLY_BEGINNER.md.

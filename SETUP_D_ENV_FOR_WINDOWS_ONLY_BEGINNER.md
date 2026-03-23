@@ -1,4 +1,4 @@
-# FROM_SCRATCH_BEGINNER.md
+# SETUP_D_ENV_FOR_WINDOWS_ONLY_BEGINNER.md
 ---
 > These instructions assume a fresh Windows 11 install, but they also work on systems with existing tools.
 
@@ -35,7 +35,7 @@ When downloading the D installer, your browser or Windows may warn you that the 
 - If Windows Defender SmartScreen blocks the installer, click "More info" and then "Run anyway".  
 - Only proceed if you are certain the file is from the official D language website (<https://dlang.org>).
 
-# FROM_SCRATCH_BEGINNER.md
+# SETUP_D_ENV_FOR_WINDOWS_ONLY_BEGINNER.md
 
 Welcome! This guide will walk you through setting up your computer for D programming, step by step. No prior experience is required—just follow along and you'll be ready to write and debug D code in no time.
 

@@ -14,12 +14,12 @@ This is a template for D language projects on Windows. This README serves as a q
 - **CREATE_NEW_D_PROJECT_BEGINNER.md** — Step-by-step beginner guide for setting up, creating, running, and debugging D projects. Highly recommended for new users.
 - **CREATE_NEW_D_PROJECT_EXPERT.md** — Concise expert guide for experienced users or those already familiar with D and VS Code.
 
-- **FROM_SCRATCH_BEGINNER.md** — Guide for setting up a D project completely from scratch (no template). Useful for learning the manual process or troubleshooting environment issues.
-- **FROM_SCRATCH_EXPERT.md** — Expert-level instructions for advanced users who want to set up everything manually or understand the underlying steps.
+ - **SETUP_D_ENV_FOR_WINDOWS_ONLY_BEGINNER.md** — Guide for setting up a D project completely from scratch (no template). Useful for learning the manual process or troubleshooting environment issues.
+ - **SETUP_D_ENV_FOR_WINDOWS_ONLY_EXPERT.md** — Expert-level instructions for advanced users who want to set up everything manually or understand the underlying steps.
 
 - **dub.json** — Project configuration for the D build tool (dub).
 - **dub.selections.json** — Dependency lock file for dub.
 
 - Always start with the Markdown (.md) files for documentation and setup help.
-- For troubleshooting or advanced usage, see the EXPERT guides or FROM_SCRATCH guides.
+- For troubleshooting or advanced usage, see the EXPERT guides or SETUP_D_ENV_FOR_WINDOWS_ONLY guides.
 

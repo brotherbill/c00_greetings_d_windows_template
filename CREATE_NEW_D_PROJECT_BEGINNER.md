@@ -27,7 +27,7 @@ As an alternative to working directly in Windows, this course also provides inst
 
 ## One-Time Setup
 
-Follow FROM_SCRATCH.md to set up your environment. This will install all prerequisites and create the `c00_greetings_d_windows_template` project, which contains the templates and scripts for new projects.
+Follow SETUP_D_ENV_FOR_WINDOWS_ONLY_BEGINNER.md to set up your environment. This will install all prerequisites and create the `c00_greetings_d_windows_template` project, which contains the templates and scripts for new projects.
 
 **Note:**
 - Do not edit or delete the `c00_greetings_d_windows_template` directory. It is required for creating new projects with `np.ps1`.
@@ -69,7 +69,7 @@ To create a new D project:
 
    In VS Code, open the Explorer view (Ctrl+Shift+E), navigate to your new project folder, and select `app.d` to start editing your code. The Explorer is the file browser on the left side of VS Code. Double-click files to open them in the editor.
 
-For full details and troubleshooting, see FROM_SCRATCH.md.
+For full details and troubleshooting, see SETUP_D_ENV_FOR_WINDOWS_ONLY_BEGINNER.md.
 
 ## Running a New D Project
 
@@ -88,7 +88,7 @@ After creating your new D project, you can run and debug it in VS Code:
 6. Press F5 again to continue running the program until it finishes.
    > *Beginner Tip:* You can set more breakpoints or use F10/F11 to step through your code as much as you like.
 
-This workflow lets you interactively debug your D program, inspect variables, and see output in the VS Code Terminal. For more details, see FROM_SCRATCH_BEGINNER.md or FROM_SCRATCH_EXPERT.md.
+This workflow lets you interactively debug your D program, inspect variables, and see output in the VS Code Terminal. For more details, see SETUP_D_ENV_FOR_WINDOWS_ONLY_BEGINNER.md or SETUP_D_ENV_FOR_WINDOWS_ONLY_EXPERT.md.
 
 > **Beginner Tip:** If you get stuck, don't give up! Programming takes practice, and every error is a chance to learn. Celebrate your progress and ask for help when you need it.
 
