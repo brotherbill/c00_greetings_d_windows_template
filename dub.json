@@ -5,10 +5,12 @@
 	"copyright": "Copyright © 2026",
 	"description": "description of my next d project",
 	"license": "proprietary",
-	"name": "my_next_d_project",
+	"name": "c00_greetings_d_windows_template",
 	"targetType": "executable",
 	"sourcePaths": [
 		"source"
-	]
+	],
+	"buildOptions": ["debugInfoC"],
+	"targetPath": "bin/"
 }
 

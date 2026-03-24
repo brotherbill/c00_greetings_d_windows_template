@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/c52_1g_user_defined_constructor_is_written
+c52_1g_user_defined_constructor_is_written.so
+c52_1g_user_defined_constructor_is_written.dylib
+c52_1g_user_defined_constructor_is_written.dll
+c52_1g_user_defined_constructor_is_written.a
+c52_1g_user_defined_constructor_is_written.lib
+c52_1g_user_defined_constructor_is_written-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

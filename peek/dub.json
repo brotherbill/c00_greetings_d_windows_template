@@ -1,0 +1,11 @@
+{
+	"authors": [
+		"broth"
+	],
+	"copyright": "Copyright © 2025, broth",
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "c52_1g_user_defined_constructor_is_written"
+,
+    "buildOptions-windows": ["debugInfoC"]
+}

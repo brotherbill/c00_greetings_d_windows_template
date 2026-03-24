@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug Dub (cppvsdbg)",
+            "name": "Debug Dub",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/${workspaceFolderBasename}.exe",
+            "program": "${workspaceFolder}/c52_1g_user_defined_constructor_is_written.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -16,7 +16,15 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "externalConsole": false
+        },
+        {
+            "name": "Native (gdb) Debug",
+            "type": "gdb",
+            "request": "launch",
+            "target": "${workspaceFolder}/bin/app.exe",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "valuesFormatting": "parseText"
         }
-     ]
+    ]
 }
-
