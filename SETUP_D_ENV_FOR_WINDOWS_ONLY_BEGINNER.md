@@ -76,6 +76,7 @@ When finished, close VS Code.
    > *Beginner Tip:* If you see a warning about the download, refer to the "Handling Download Warnings for the D Installer" section above for step-by-step instructions.
    > *Beginner Tip:* Once the download is complete, open the downloaded file to start the installer. Windows will likely show a dialog: "Do you want to allow this app from an unknown publisher to make changes to your device?" This is normal for D—click Yes to continue with the installation.
    > *Beginner Tip:* The DMD compiler lets your computer understand and run D programs.
+   
 4. **Install code-d Extension**
 
    1. Open VS Code. Press Ctrl+Shift+X to open Extensions. Search for `code-d` by WebFreak and click Install.  
@@ -87,24 +88,6 @@ When finished, close VS Code.
    >     *Beginner Tip:* In the Extensions view, type `code-d` into the textbox just below the "EXTENSIONS: MARKETPLACE" label. The first item in the list should be "D Programming Language (code-d)". Click Install next to it.
    >     *Beginner Tip:* If prompted, click the "Trust Publishers & Install" button to continue installing the extension.
    >     **Note:** You may see a "Reinstall serve-d" notification in VS Code. It is not needed—just close the notification.  If prompted to change compilers, just close the notification.
-
-5. **Add gdb debugger**
-
-   1. Visit https://winlibs.com
-   2. Visit https://winlibs.com/#download-release
-      1. Search for "Help! I don't know which download to choose!"
-         Don't worry.  For most purposes, the latest Windows 64-bit release version with MSVCRT runtime and POSIX threads is a good choice.
-      2. Download it here.  Click "here".
-      3. Expand downloaded zip file
-         1. winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64msvcrt-13.0.0-r1.zip
-
-      4. Copy mingw64 folder to C:\tools\  (*create folder if necessary*)
-
-   3. Edit .vscode\launch.json
-      1. Change all locations of `"miDebuggerPath": "/usr/bin/gdb"`
-         to `"miDebuggerPath": "C:\tools\mingw64\bin\gdb.exe"`
-
-
 
 5. **Create Project Folder**
    In File Explorer, create the full folder path where you want to store your D projects (for example, `C:\dev\d`). If any part of the path (such as `C:\dev` or `C:\dev\d`) does not exist, create it now. At the end of this step, the entire `C:\dev\d` path should exist, even if some parts already existed before. Close File Explorer. It will be easier to follow this course if you store your D projects there.
@@ -188,7 +171,7 @@ When finished, close VS Code.
    
    > *Beginner Tip:* Breakpoints let you pause your program and see what it’s doing. F5 starts or continues, F10 steps one line.
 
-Congratulations! You are now ready to start learning and building D projects on Windows.
+**Congratulations! You are now ready to start learning and building D projects on Windows.**
 
 > **Sidebar:**  
 > This method gives you full F5 debugging and uses the VS Code Terminal as your Console. It avoids manual file copying and makes new D project setup quick and reliable—just one command for a ready-to-debug project.
