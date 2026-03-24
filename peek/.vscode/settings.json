@@ -1,5 +1,0 @@
-{
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "tasks.runInTerminal": true,
-    "tasks.defaultShell": "PowerShell"
-}
