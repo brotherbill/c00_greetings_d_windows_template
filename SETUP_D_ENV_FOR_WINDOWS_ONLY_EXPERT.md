@@ -34,6 +34,7 @@ Concise, scriptable setup for D development on Windows 11 (for experienced users
    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
    
    cd C:\dev\d\c00_greetings_d_windows_template
+   
    ./setup_new_d_project_global.ps1
    ```
    
